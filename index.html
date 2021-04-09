@@ -15,22 +15,66 @@
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
             crossorigin="anonymous"></script>
 
-    <title>Hello, world!</title>
+    <title>Gabriel Lorenzo Yangzon</title>
 </head>
 
 <body>
 
     <div class="container my-5">
         <h1>Gabriel Lorenzo Yangzon</h1>
-        <nav class="nav mt-5">
+        <nav class="nav nav-pills mt-5" id="nav-tab" role="tablist">
             <ul class="nav nav-pills">
-                <li class="nav-item"><a  class="nav-link active">Home</a></li>
-                <li class="nav-item"><a  class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>            
+                <li class="nav-item"><a  a href="#" class="nav-link active" data-bs-toggle="pill" data-bs-target="#nav-home" role="tab">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#nav-about" role="tab">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#nav-contact" role="tab">Contact</a></li>            
             </ul>
         </nav>
-    
     </div>
+
+    <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="container mt-4">
+                    <div class="row mx-1">
+                        <div class="col">
+                            <h3>Work experience</h3>
+                            <div class="card mx-1">
+                                <div class="card-title p-3">
+                                    SDMI - Sumitomo Heavy Industries
+                                </div>
+                                <div class="card-body">
+                                    <div class="strong">2012-current</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3>Skills</h3>                                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                <div class="container mt-4">
+                    
+                                <div class="row mx-1">
+                                    <h3>About</h3>
+                                 </div>
+
+                                
+                </div>
+                
+            </div>
+
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="container">
+                    <div class="row mx-1">
+                        <h3>Contact</h1>            
+                    </div>   
+                </div>
+            </div>
+
+    </div>    
+    
 
    
 
