@@ -14,35 +14,48 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
             crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="./custom.css">
     <title>Gabriel Lorenzo Yangzon</title>
 </head>
 
 <body>
 
-    <div class="container my-5">
+    <div class="container my-5 ">
         <h1>Gabriel Lorenzo Yangzon</h1>
-        <nav class="nav nav-pills mt-5" id="nav-tab" role="tablist">
+        <div>Enjoys Development and Programming</div>
+        <nav class="nav nav-pills mt-5 justify-content-xs-center" id="nav-tab" role="tablist">
             <ul class="nav nav-pills">
-                <li class="nav-item"><a  a href="#" class="nav-link active" data-bs-toggle="pill" data-bs-target="#nav-home" role="tab">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#nav-about" role="tab">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#nav-contact" role="tab">Contact</a></li>            
+                <li class="nav-item hover"><a href="#" class="nav-link active" data-bs-toggle="pill" data-bs-target="#nav-home" role="tab">Home</a></li>
+                <li class="nav-item hover"><a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#nav-about" role="tab">About</a></li>
+                <li class="nav-item hover"><a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#nav-contact" role="tab">Contact</a></li>            
             </ul>
         </nav>
     </div>
 
-    <div class="tab-content" id="nav-tabContent">
+    <div class="tab-content container shadow p-3" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="container mt-4">
                     <div class="row mx-1">
-                        <div class="col">
+                        <div class="col-lg">
                             <h3>Work experience</h3>
-                            <div class="card mx-1">
-                                <div class="card-title p-3">
-                                    SDMI - Sumitomo Heavy Industries
+                            
+                            <div class="card p-3">
+                                <div class="card-title mx-3">
+                                    <h5>SDMI - Sumitomo Heavy Industries</h5>
                                 </div>
                                 <div class="card-body">
-                                    <div class="strong">2012-current</div> 
+                                    <div class="mx-3">
+                                        <h5>Systems Programmer</h5>
+                                    
+                                        <div><strong>2012-current</strong></div> 
+                                        <div>Solidworks API Automation developer</div>
+                                        <div>ASP.net Core Developer</div>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                       <li class="list-group-item">-Developing Windows form Application</li>
+                                       <li class="list-group-item">-Developing ASP.net core API</li>
+                                       <li class="list-group-item">-Developing Front using asp.net core mvc and React</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -68,7 +81,8 @@
             <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
                 <div class="container">
                     <div class="row mx-1">
-                        <h3>Contact</h1>            
+                        <h3>Contact</h1> 
+                        <div>Email: gab.yangzon@yahoo.com</div>           
                     </div>   
                 </div>
             </div>
