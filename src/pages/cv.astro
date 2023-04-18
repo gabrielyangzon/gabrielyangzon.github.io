@@ -1,6 +1,25 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+
+const descFullStack: string[] = [
+  "Led team of junior engineers during the development of multiple web applications for our clients in Japan and Finland.",
+  "Built and maintained Web API backend using .Net Core and SQL server.",
+  "Involved in migration of on premise SQL database to AWS RDS.",
+  "Managed the migration of web APIs and front end site to AWS EC2 Environment.",
+  "Converted multiple excel and old websites to a more modern and secure web Applications using .Net MVC / Angular framework.",
+  "Worked intensively in building web application using Infragistics components such as data grids, charts and graphs for Boiler and Plant Designers.",
+  "Created multiple Tableau Prep using oracle and MSSQL connection as data source.",
+];
+
+const descSystemsEngineer: string[] = [
+  "Deployed in Japan to develop windows and web applications together with our Japanese counter partners",
+  "Organzation of files.",
+  "July 2012 to July 2015",
+  "Developed and maintained multiple windows form application using C# .Net and Solidworks API",
+  "Built software add-ins using .NET framework in Solidworks to automate Engineers repetitive tasks and reduce man-hour by 80%.",
+  "Provide software add-ins support to CAD Users",
+];
 ---
 
 <BaseLayout title="Resume">
@@ -40,13 +59,13 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <TimeLineElement
       title="Systems Engineer"
       subtitle="From July 2012 to at Present at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
-      desc=""
+      desc={descSystemsEngineer}
     />
 
     <TimeLineElement
       title="Full Stack Developer (Intra Company Transfer)"
-      subtitle="From Oct 2022 to Oct 2023 at Sumitomo Heavy Industries, Osaki, Japan"
-      desc=""
+      subtitle="From Oct 2022 to Oct 2023 at Sumitomo Heavy Industries , Energy and Environment, Osaki, Japan"
+      desc={descFullStack}
     />
   </div>
 
@@ -57,7 +76,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
       <a href="https://www.linkedin.com/in/gabrielyangzon/" target="_blank">
-        -> LinkedIn Certification List
+        - LinkedIn Certification List
       </a>
     </li>
     <li>
@@ -75,9 +94,9 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>English (Native)</li>
-    <li>Tagalog (C2)</li>
-    <li>Japanese (N5)</li>
+    <li>Tagalog(Native)</li>
+    <li>English</li>
+    <li>Japanese(N5)</li>
     <li>C#</li>
     <li>.NET</li>
     <li>JavaScript</li>
