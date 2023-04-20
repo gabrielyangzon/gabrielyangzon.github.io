@@ -3,23 +3,26 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 
 const descFullStack: string[] = [
-  "Led team of junior engineers during the development of multiple web applications for our clients in Japan and Finland.",
+  "Led team of junior engineers during the development of multiple web applications for our counterpartners in Japan and Finland.",
   "Built and maintained Web API backend using .Net Core and SQL server.",
-  "Involved in migration of on premise SQL database to AWS RDS.",
+  "Involved in migration of on premise SQL databases to AWS RDS.",
   "Managed the migration of web APIs and front end site to AWS EC2 Environment.",
-  "Converted multiple excel and old websites to a more modern and secure web Applications using .Net MVC / Angular framework.",
+  "Converted multiple excel and old websites to a more modern and secure web Applications using Angular framework.",
   "Worked intensively in building web application using Infragistics components such as data grids, charts and graphs for Boiler and Plant Designers.",
   "Created multiple Tableau Prep using oracle and MSSQL connection as data source.",
 ];
 
 const descSystemsEngineer: string[] = [
   "Deployed in Japan to develop windows and web applications together with our Japanese counter partners",
-  "Organzation of files.",
-  "July 2012 to July 2015",
-  "Developed and maintained multiple windows form application using C# .Net and Solidworks API",
-  "Built software add-ins using .NET framework in Solidworks to automate Engineers repetitive tasks and reduce man-hour by 80%.",
-  "Provide software add-ins support to CAD Users",
+  "Built and maintained multiple ASP.NET MVC web applications for our counterpartners in Japan.",
 ];
+
+const juniorProgrammer: string[] = [
+  "Built software add-ins using .NET framework in Solidworks to automate Engineers repetitive tasks and reduce man-hour by 80%.",
+  "Developed and maintained multiple windows form application using C# .Net and Solidworks API",
+];
+
+const systemsProgrammer: string[] = [""];
 ---
 
 <BaseLayout title="Resume">
@@ -57,8 +60,20 @@ const descSystemsEngineer: string[] = [
 
   <div class="time-line-container mb-10">
     <TimeLineElement
+      title="Junior Programmer"
+      subtitle="From July 2012 to April 2015 at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
+      desc={juniorProgrammer}
+    />
+
+    <TimeLineElement
+      title="Systems Programmer"
+      subtitle="From April 2015 to April 2018 at Present at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
+      desc={systemsProgrammer}
+    />
+
+    <TimeLineElement
       title="Systems Engineer"
-      subtitle="From July 2012 to at Present at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
+      subtitle="From July 2018 to at Present at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
       desc={descSystemsEngineer}
     />
 
