@@ -1,0 +1,113 @@
+﻿@page "/cv"
+
+@using blazor_profile.Shared.Components
+
+
+
+<div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+</div>
+
+<div class="mb-10 text-justify">
+    Computer Science Graduate from Philippines with 12 years + of experience in
+    software development. Dominion of various programming languages, frameworks,
+    CMS and graphics engines. Experience in WEB design and development. Work
+    with Data Base handled systems, as well as design, normalization and
+    migration. Knowledge of work with graphic design tools for image
+    manipulation , User Interfaces design, Web sites and Backend Development.
+</div>
+
+<div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+</div>
+
+<div class="time-line-container grid gap-4 mb-10">
+
+    <TimeLine title="Bachelor Of Science in Computer Science"
+              subtitle="2008 to 2012 at STI College Philippines" />
+
+    <TimeLine title="Technician Information-Technology"
+              subtitle="2004 to 2008 at Neptali A. Gonzales High School" />
+
+</div>
+
+<div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+</div>
+
+<div class="time-line-container mb-10">
+
+    <TimeLine title="Full Stack Developer (Intra Company Transfer)"
+              subtitle="From Oct 2022 to Oct 2023 at Sumitomo Heavy Industries , Energy and Environment, Osaki, Japan"
+              descriptions=@descriptions["descFullStack"] />
+
+
+    <TimeLine title="Systems Engineer"
+              subtitle="From July 2018 to at Present at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
+              descriptions=@descriptions["juniorProgrammer"] />
+
+    <TimeLine title="Systems Programmer"
+              subtitle="From April 2015 to April 2018 at Present at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines" />
+
+    <TimeLine title="Junior Programmer"
+              subtitle="From July 2012 to April 2015 at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
+              descriptions=@descriptions["systemEngineer"] />
+
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Skills</div>
+    </div>
+
+    <ul class="list-disc md:columns-5 columns-2 mx-6">
+        <li>Tagalog(Native)</li>
+        <li>English</li>
+        <li>Japanese(N5)</li>
+        <li>C#</li>
+        <li>.NET</li>
+        <li>MVC</li>
+        <li>Blazor</li>
+        <li>JavaScript</li>
+        <li>Typescript</li>
+        <li>Node.js</li>
+        <li>SQL</li>
+        <li>MongoDB</li>
+        <li>Angular</li>
+        <li>React</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JQuery</li>
+
+        <li>Full stack Development</li>
+        <li>Git</li>
+        <li>Visual Studio</li>
+        <li>Tableau Prep</li>
+        <li>Tableau Desktop</li>
+    </ul>
+
+</div>
+
+
+
+
+
+
+@code {
+    public Dictionary<string, List<string>> descriptions = new Dictionary<string, List<string>>()
+    {
+        {"descFullStack",new List<string> {"Led team of junior engineers during the development of multiple web applications for our counterpartners in Japan and Finland.",
+  "Built and maintained Web API backend using .Net Core and SQL server.",
+  "Involved in migration of on premise SQL databases to AWS RDS.",
+  "Managed the migration of web APIs and front end site to AWS EC2 Environment.",
+  "Converted multiple excel and old websites to a more modern and secure web Applications using Angular framework.",
+  "Worked intensively in building web application using Infragistics components such as data grids, charts and graphs for Boiler and Plant Designers.",
+  "Created multiple Tableau Prep using oracle and MSSQL connection as data source.", } },
+
+
+       {"systemEngineer" , new List<string>{   "Deployed quarterly in Japan to develop windows and web applications together with our Japanese counter partners",
+            "Built and maintained multiple ASP.NET MVC web applications for our counterpartners in Japan."} },
+
+
+       {"juniorProgrammer" , new List<string>{ "Built software add-ins using .NET framework in Solidworks to automate Engineers repetitive tasks and reduce man-hour by 80%.",
+            "Developed and maintained multiple windows form application using C# .Net and Solidworks API"}}
+    };
+}
