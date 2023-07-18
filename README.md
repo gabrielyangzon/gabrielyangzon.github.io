@@ -1,1 +1,0 @@
-# https://gabrielyangzon.github.io/
