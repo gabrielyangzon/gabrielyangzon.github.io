@@ -3,26 +3,29 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 
 const descFullStack: string[] = [
-  "Led team of junior engineers during the development of multiple web applications for our counterpartners in Japan and Finland.",
-  "Built and maintained Web API backend using .Net Core and SQL server.",
-  "Involved in migration of on premise SQL databases to AWS RDS.",
-  "Managed the migration of web APIs and front end site to AWS EC2 Environment.",
-  "Converted multiple excel and old websites to a more modern and secure web Applications using Angular framework.",
-  "Worked intensively in building web application using Infragistics components such as data grids, charts and graphs for Boiler and Plant Designers.",
-  "Created multiple Tableau Prep using oracle and MSSQL connection as data source.",
+  "Intra-Company transferee for one year.",
+  "Developed Backend APIs using C#.Net",
+  "Built Frontend Web application using .NET MVC, Angular and Infragistics",
+  "Managed and migrated on-premise infrastructure to AWS.",
+  "Trained Salesforce Tableau by Japanese counter-partners",
+  "Built and managed Visual Analytics using Tableau Prep and Desktop."
 ];
 
 const descSystemsEngineer: string[] = [
-  "Deployed quarterly in Japan to develop windows and web applications together with our Japanese counter partners",
-  "Built and maintained multiple ASP.NET MVC web applications for our counterpartners in Japan.",
+  "Developed and maintained multiple .Net and Angular Web Applications.",
+  "Worked intensively on building web applications using Infragistics
+    components such as data grid, charts and graphs for Plant Designers and
+    Engineers.",
+  "Managed and trained a small team of developers to join in the development
+  of the company's digital transformation."
 ];
 
-const juniorProgrammer: string[] = [
-  "Built software add-ins using .NET framework in Solidworks to automate Engineers repetitive tasks and reduce man-hour by 80%.",
-  "Developed and maintained multiple windows form application using C# .Net and Solidworks API",
-];
 
-const systemsProgrammer: string[] = [""];
+
+const systemsProgrammer: string[] = ["Developed and provided maintenance for software add-ins using .NET framework in Solidworks to automate Engineers repetitive tasks and reduce
+man-hour by 80%." , "Built and maintained multiple windows form application using C# .Net and
+Solidworks API" ,  "Developed and implemented MS SQL databases and .NET Rest APIs to manage
+Engineers plants data."];
 ---
 
 <BaseLayout title="Resume">
@@ -44,13 +47,15 @@ const systemsProgrammer: string[] = [""];
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Technician Information-Technology"
-      subtitle="2004 to 2008 at Neptali A. Gonzales High School"
-    />
+    
     <TimeLineElement
       title="Bachelor Of Science in Computer Science"
       subtitle="2008 to 2012 at STI College Philippines"
+    />
+
+    <TimeLineElement
+      title="Technician Information-Technology"
+      subtitle="2004 to 2008 at Neptali A. Gonzales High School"
     />
   </div>
 
@@ -60,9 +65,9 @@ const systemsProgrammer: string[] = [""];
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Junior Programmer"
-      subtitle="From July 2012 to April 2015 at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
-      desc={juniorProgrammer}
+      title="Systems Engineer"
+      subtitle="From July 2018 to at Present at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
+      desc={descSystemsEngineer}
     />
 
     <TimeLineElement
@@ -71,11 +76,7 @@ const systemsProgrammer: string[] = [""];
       desc={systemsProgrammer}
     />
 
-    <TimeLineElement
-      title="Systems Engineer"
-      subtitle="From July 2018 to at Present at Sumitomo Heavy Industries Design and Manufacturing Inc. , Pasig City, Philippines"
-      desc={descSystemsEngineer}
-    />
+  
 
     <TimeLineElement
       title="Full Stack Developer (Intra Company Transfer)"
